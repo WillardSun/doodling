@@ -44,6 +44,14 @@ def unicon():
                 24. usd to hkd
                 25. hkd to rmb
                 26. rmb to hkd
+                27. hkd to eur 
+                28. eur to hkd
+                29. sec to min 
+                30. min to sec
+                31. min to hr
+                32. hr to min
+                33. hr to day 
+                34. day to hr
                 ADVANCED
                 1. bmi
                 ''')
@@ -103,6 +111,23 @@ def unicon():
                 result = number * 0.9
             elif unit == 'rmb to hkd':
                 result = number * 1.11
+            elif unit == 'hkd to eur':
+                result = number * 0.12
+            elif unit == 'eur to hkd':
+                result = number * 8.63
+            elif unit == 'min to sec':
+                result = number * 60
+            elif unit == 'sec to min':
+                result = number / 60
+            elif unit == 'min to hr':
+                result = number / 60
+            elif unit == 'hr to min':
+                result = number * 60
+            elif unit == 'hr to day':
+                result = number / 24
+            elif unit == 'day to hr':
+                result = number * 24
+
             print (result)
         time.sleep(5)
 
